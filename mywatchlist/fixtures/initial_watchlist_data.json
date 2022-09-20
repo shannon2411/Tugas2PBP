@@ -1,0 +1,123 @@
+[
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 1,
+      "fields": {
+        "watched": true,
+        "title": "Winx Saga",
+        "rating": 4,
+        "release_date": "2022-09-10",
+        "review": "Winx Saga is so cool"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 2,
+      "fields": {
+        "watched": true,
+        "title": "Little Women",
+        "rating": 5,
+        "release_date": "2022-09-11",
+        "review": "girl boss"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 3,
+      "fields": {
+        "watched": true,
+        "title": "Twilight",
+        "rating": 2,
+        "release_date": "2022-09-12",
+        "review": "This movie is so cringe"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 4,
+      "fields": {
+        "watched": false,
+        "title": "Fresh",
+        "rating": 3,
+        "release_date": "2022-09-17",
+        "review": "Fresh is a must watch"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 5,
+      "fields": {
+        "watched": true,
+        "title": "Coco",
+        "rating": 4,
+        "release_date": "2022-09-12",
+        "review": "Good Movie"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 6,
+      "fields": {
+        "watched": true,
+        "title": "Soul",
+        "rating": 5,
+        "release_date": "2022-09-17",
+        "review": "Really inspires me"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 7,
+      "fields": {
+        "watched": false,
+        "title": "Fifty Shades of Grey",
+        "rating": 5,
+        "release_date": "2022-09-17",
+        "review": "This movie is so cool"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 8,
+      "fields": {
+        "watched": true,
+        "title": "James Bond",
+        "rating": 5,
+        "release_date": "2022-09-17",
+        "review": "I really love this movie"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 9,
+      "fields": {
+        "watched": true,
+        "title": "Charlis's Angels",
+        "rating": 5,
+        "release_date": "2022-09-17",
+        "review": "This movie is so cool"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 10,
+      "fields": {
+        "watched": true,
+        "title": "Flipped",
+        "rating": 4,
+        "release_date": "2022-09-17",
+        "review": "So romantic"
+      }
+    },
+    {
+      "model": "mywatchlist.mywatchlist",
+      "pk": 11,
+      "fields": {
+        "watched": false,
+        "title": "Love and Leashes",
+        "rating": 5,
+        "release_date": "2022-09-17",
+        "review": "Cool movie!"
+      }
+    }
+  ]
