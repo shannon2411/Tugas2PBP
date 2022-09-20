@@ -1,4 +1,5 @@
 ## Link Heroku
+[https://shannon-tugas2-pbp.herokuapp.com/mywatchlist/](https://shannon-tugas2-pbp.herokuapp.com/mywatchlist/)
 
 ## Perbedaan JSON, XML, dan HTML
 1. JSON atau JavaScript Object Notation merupakan suatu format yang dibuat di atas JavaScript untuk merepresentasikan data dalam bentuk key dan value. JSON dapat digunakan untuk melakukan penyimpanan dan pertukaran data dengan cepat dikarenakan strukturnya yang dapat menyimpan data dalam bentuk array, tetapi lebih sulit untuk dibaca oleh manusia daripada XML.
