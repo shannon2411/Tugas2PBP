@@ -1,0 +1,64 @@
+
+
+{% extends 'base.html' %}
+
+ {% block content %}
+ <style>
+  h1 {
+    color: palevioletred  ;
+    font-family: verdana;
+    font-size: 300%;
+  }
+  h3 {
+    color: palevioletred;
+    font-family: verdana;
+    font-size: 100%;
+  }
+  h5 {
+    color: plum;
+    font-family: verdana;
+    font-size: 60%;
+  }
+  table {
+    color: palevioletred;
+    border-spacing: 0;
+    margin: 30px;
+  }
+  th {
+    border: 1px solid purple;
+    border-spacing: 0;
+    padding: 10px;
+  }
+  button {
+    border-radius:10px;
+    background-color: pink;
+    color: palevioletred;
+  }
+ </style>
+
+  <h1>To-do List</h1>
+
+  <h5>Created by: Shannon </h5>
+
+  <h3>Hi, {{user}}!</h3>
+
+  <button><a href="{% url 'todolist:show_create_todo' %}">Create New Task</a></button>
+  <button><a href="{% url 'todolist:logout' %}">Log Out</a></button>
+
+  <table>
+    <tr>
+      <th>Created At</th>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for task in todo %}
+        <tr>
+            <th>{{task.date}}</th>
+            <th>{{task.title}}</th>
+            <th>{{task.description}}</th>
+        </tr>
+    {% endfor %}
+  </table>
+
+ {% endblock content %}
