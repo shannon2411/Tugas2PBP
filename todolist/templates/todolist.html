@@ -5,19 +5,19 @@
  {% block content %}
  <style>
   .card {
-    margin: 50px 50px
+    margin: 25px 25px
   }
   h1 {
-    color: palevioletred  ;
+    color: black  ;
     font-family: verdana;
     
   }
   h3 {
-    color: palevioletred;
+    color: black;
     font-family: verdana;
   }
   h5 {
-    color: plum;
+    color: black;
     font-family: verdana;
   }
   table {
@@ -35,8 +35,20 @@
     background-color: pink;
     color: palevioletred;
   }
+  .todolist{
+    color: palevioletred;
+    font-family: verdana;
+    text-align: center;
+    margin: 5% auto;
+    display: block;
+    width:500px;
+  }
+  body{
+    background-image: url(https://i.pinimg.com/736x/07/af/be/07afbe2a18d869b285abc3fa43fa6917.jpg);
+  }
  </style>
-
+<body>
+<div class = "todolist">
   <h1>To-do List</h1>
 
   <h5>Created by: Shannon </h5>
@@ -46,7 +58,7 @@
   <button><a href="{% url 'todolist:show_create_todo' %}">Create New Task</a></button>
   <button><a href="{% url 'todolist:logout' %}">Log Out</a></button>
 
-
+</div>
     
     <div class="row">
     {% for task in todo %}
@@ -59,5 +71,5 @@
     </div>
     {% endfor %}
     </div>
-
+</body>
  {% endblock content %}
