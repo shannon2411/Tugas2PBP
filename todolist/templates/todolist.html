@@ -4,20 +4,21 @@
 
  {% block content %}
  <style>
+  .card {
+    margin: 50px 50px
+  }
   h1 {
     color: palevioletred  ;
     font-family: verdana;
-    font-size: 300%;
+    
   }
   h3 {
     color: palevioletred;
     font-family: verdana;
-    font-size: 100%;
   }
   h5 {
     color: plum;
     font-family: verdana;
-    font-size: 60%;
   }
   table {
     color: palevioletred;
@@ -45,20 +46,18 @@
   <button><a href="{% url 'todolist:show_create_todo' %}">Create New Task</a></button>
   <button><a href="{% url 'todolist:logout' %}">Log Out</a></button>
 
-  <table>
-    <tr>
-      <th>Created At</th>
-      <th>Title</th>
-      <th>Description</th>
-    </tr>
-    {% comment %} Add the data below this line {% endcomment %}
+
+    
+    <div class="row">
     {% for task in todo %}
-        <tr>
-            <th>{{task.date}}</th>
-            <th>{{task.title}}</th>
-            <th>{{task.description}}</th>
-        </tr>
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{task.title}}</h5>
+        <p class="card-text">{{task.date}}</p>
+        <p class="card-text">{{task.description}}</p>
+      </div>
+    </div>
     {% endfor %}
-  </table>
+    </div>
 
  {% endblock content %}
